@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+
+<body>
+    <h3>Creating JavaScript Objects</h3>
+    <p id="demo"></p>
+    <script>
+        var student = {
+            name: "Ram",
+            age: "21",
+            studies: "Software Engineeing"
+        };
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + "studies " + student.studies;
+    </script>
+
+    <script>
+        var student = new Object();
+        student.name = "Ram",
+            student.age = "21",
+            student.studies = "Software Engineeing";
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+
+    </script>
+    <script>
+        function stud(name, age, studies) {
+            this.name = name;
+            this.age = age;
+            this.studies = studies;
+        }
+        var student = new stud("Ram", "21", "Software Engineeing"); // Passing the parameters //
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+
+    </script>
+</body>
+
+</html>

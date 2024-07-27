@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Funtion</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function* generateFunction(){
+            yield 1;
+            yield 2;
+            return 3;
+            }
+            let generator = generateFunction();
+            let one  = generator.next();
+            alert(JSON.stringify(one));
+            let two = generator.next();
+            alert(JSON.stringify(two));
+            let three = generator.next();
+            alert(JSON.stringify(three));
+            
+    </script>
+</body>
+</html>

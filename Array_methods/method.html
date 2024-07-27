@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+JavaScript</head>
+<body>
+   <p id="method"></p>
+<script>
+    // Creating arrays//
+        let cars=["honda","bmw","kia"];
+    document.getElementById("method").innerHTML = cars;
+
+    let bmw=cars[1];
+    document.getElementById("method").innerHTML = bmw;
+    
+    // Length of an array //
+    let len =cars.length;
+    document.getElementById("method").innerHTML = len;
+
+    let last= cars[cars.length-1];
+    document.getElementById("method").innerHTML = last;
+
+
+    cars.forEach((items,index,array)=>{console.log(items,index);});
+    // Convert an array to String //
+    document.getElementById("method").innerHTML = cars.toString();
+
+    // Using pop()function //
+    let last1 = cars.pop();
+    document.getElementById("method").innerHTML = last1;
+
+    let last2 = cars[cars.length-1];
+    console.log(last2);
+
+     // Using push method  //
+    cars.push("ford");
+    document.getElementById("method").innerHTML = cars;
+
+    // Using shift method  //
+    cars.shift();
+    document.getElementById("method").innerHTML = cars;
+
+    // Uisng unshift method //
+    cars.unshift("hundai")
+    document.getElementById("method").innerHTML = cars;
+
+
+    // Using concat method//
+    let bikes=["yamaha","royal enfield","suzuki"];
+    let vehicles = cars.concat(bikes);
+    document.getElementById("method").innerHTML = vehicles;
+    
+
+    // Using sort method //
+    vehicles.sort();
+    document.getElementById("method").innerHTML = vehicles;
+
+    // Using reverse method //
+    vehicles.reverse();
+    document.getElementById("method").innerHTML = vehicles;
+</script>
+</html>
+</body>
+</html>

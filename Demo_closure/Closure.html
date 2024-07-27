@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var a= 10
+        function Myfunction1(){
+            var b= 20
+            function Myfunction2(){ // Can access the value of a and b //
+                var c = a+b 
+                return c
+            }
+            return Myfunction2()
+            }
+            var sum = Myfunction1()
+            document.getElementById("demo").innerHTML = sum
+
+        </script>       
+</body>
+</html>

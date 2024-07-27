@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+JavaScript</head>
+<body>
+    <p id="demo"></p> 
+</body>
+<script>
+    // Creating arrays//
+        let cars=["honda","bmw","kia"];
+    document.getElementById("demo").innerHTML = cars;
+
+    let bmw=cars[1];
+    document.getElementById("demo").innerHTML = bmw;
+    
+    // Length of an array //
+    let len =cars.length;
+    document.getElementById("demo").innerHTML = len;
+
+    let last= cars[cars.length-1];
+    document.getElementById("demo").innerHTML = last;
+
+
+    cars.forEach((items,index,array)=>{console.log(items,index);});
+</script>
+</html>

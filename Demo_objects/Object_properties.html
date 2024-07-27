@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+
+<body>
+    <h2>Object properties</h2><p id="demo"></p>
+    <script>
+        var student = {
+            name: "Ram",
+            age: "21",
+            studies: "Software Engineeing"
+        };
+        // Method 1//
+        student.age = "25"
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student.age + " studies " + student.studies;
+
+        // Method 2//
+        x = student.age
+        document.getElementById("demo").innerHTML = student.name + " of the age " + x + " studies " + student.studies;
+        x = "age"
+        document.getElementById("demo").innerHTML = student.name + " of the age " + student[x] + " studies " + student.studies;
+    </script>
+</body>
+
+</html>

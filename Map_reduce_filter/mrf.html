@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+JavaScript</head>
+<body>
+   <p id="mrf"></p>
+<script>
+    // Creating arrays//
+        let cars=["honda","bmw","kia"];
+    document.getElementById("mrf").innerHTML = cars;
+
+    let bmw=cars[1];
+    document.getElementById("mrf").innerHTML = bmw;
+    
+    // Length of an array //
+    let len =cars.length;
+    document.getElementById("mrf").innerHTML = len;
+
+    let last= cars[cars.length-1];
+    document.getElementById("mrf").innerHTML = last;
+
+
+    cars.forEach((items,index,array)=>{console.log(items,index);});
+    // Convert an array to String //
+    document.getElementById("mrf").innerHTML = cars.toString();
+
+    // Using pop()function //
+    let last1 = cars.pop();
+    document.getElementById("mrf").innerHTML = last1;
+
+    let last2 = cars[cars.length-1];
+    console.log(last2);
+
+     // Using push method  //
+    cars.push("ford");
+    document.getElementById("mrf").innerHTML = cars;
+
+    // Using shift method  //
+    cars.shift();
+    document.getElementById("mrf").innerHTML = cars;
+
+    // Uisng unshift method //
+    cars.unshift("hundai")
+    document.getElementById("mrf").innerHTML = cars;
+
+
+    // Using concat method//
+    let bikes=["yamaha","royal enfield","suzuki"];
+    let vehicles = cars.concat(bikes);
+    document.getElementById("mrf").innerHTML = vehicles;
+    
+
+    // Using sort method //
+    vehicles.sort();
+    document.getElementById("mrf").innerHTML = vehicles;
+
+    // Using reverse method //
+    vehicles.reverse();
+    document.getElementById("mrf").innerHTML = vehicles;
+
+    // Map //
+    let num1 =[ 2,3,4,5,6,7];
+    let num2 =num1.map(multiply);
+    function multiply(value){
+        return value *2; // Multiply each and every value by 2//
+    }
+    document.getElementById("mrf").innerHTML = num2;
+
+    // Filter //
+    let num3 = num1.filter(comp);
+    function comp(value){
+        return value > 5; // Filter the value greater than 5//
+        }
+        document.getElementById("mrf").innerHTML = num3;
+
+    // Reduce //
+    let num4 = num1.reduce(sum)
+    function sum(total,value){
+        return total + value; // Add all the value//
+    }
+    document.getElementById("mrf").innerHTML = num4;
+
+
+</script>
+</html>
+</body>
+</html>
